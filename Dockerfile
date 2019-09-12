@@ -32,7 +32,7 @@ COPY --chown=1000 ./example.yaml /home/groovy/example.yaml
 COPY --chown=1000 ./yaml-parser-snakeyaml.groovy /home/groovy/entrypoint.groovy
 
 # Add some extra test scripts to demonstrate how to switch between groovy scripts
-COPY --chown=1000 ./*.groovy /home/groovy
+COPY --chown=1000 ./*.groovy /home/groovy/
 
 # Run whatever is copied as 'entrypoint.groovy'
 CMD [ "groovy", "entrypoint.groovy" ]
