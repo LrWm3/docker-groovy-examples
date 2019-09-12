@@ -1,0 +1,6 @@
+hello:
+  value: 10
+  factsoflife:
+    - 2
+    - 3
+    - 4
