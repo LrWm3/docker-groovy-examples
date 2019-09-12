@@ -1,5 +1,5 @@
-@Grab('org.yaml:snakeyaml:1.2.5')
-import org.yaml.snakeyaml.*
+@Grab('com.amihaiemil.web:eo-yaml:2.0.1')
+import com.amihaiemil.eoyaml.*
 
 println "attempting to parse yaml file 'example.yaml'..." 
 
