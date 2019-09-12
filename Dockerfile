@@ -7,6 +7,8 @@ FROM groovy:jre11 as builder
 RUN grape install io.fabric8 kubernetes-client 4.5.1 && \
   grape install org.yaml snakeyaml 1.25 && \
   grape install org.mongodb mongodb-driver 3.4.3 && \
+  grape install org.apache.kafka kafka-clients 2.3.0 && \
+  grape install org.codehaus.groovy.modules.http-builder http-builder 0.7 && \
   cp -r ~/.groovy/grapes /home/groovy/groovy-deps && \
   grape list
 
