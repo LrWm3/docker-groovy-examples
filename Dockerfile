@@ -6,6 +6,7 @@ FROM groovy:jre11 as builder
 # I don't know why but it seems I need to copy deps to a non-standard location during the build-phase
 RUN grape install io.fabric8 kubernetes-client 4.5.1 && \
   grape install org.yaml snakeyaml 1.25 && \
+  grape install org.mongodb mongodb-driver 3.4.3 && \
   cp -r ~/.groovy/grapes /home/groovy/groovy-deps && \
   grape list
 
